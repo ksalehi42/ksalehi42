@@ -5,355 +5,528 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"
-        referrerpolicy="no-referrer"></script>
-    <!-- Css Plugs -->
-    <link rel="stylesheet" href="./plugs/fontawesome-free-6.1.1-web/css/all.css">
-    <link rel="stylesheet" href="./plugs/fontawesome-free-6.1.1-web/css/brands.min.css">
-    <link rel="stylesheet" href="./plugs/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <!-- For Using Css Plugs -->
     <link rel="stylesheet" href="./plugs/owl carosel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./plugs/owl carosel/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./plugs/WOW-master/css/libs/animate.css">
+    <link rel="stylesheet" href="./plugs/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./plugs/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./plugs/alerts/sweetalert2.min.css">
-    <link rel="icon" href="./img/pundolm/albert.gif">
-    <!-- css -->
+    <link rel="stylesheet" href="./plugs/WOW-master/css/libs/animate.css">
+    <link rel="icon" href="./img/albert.gif">
+    <!-- My Css -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>physics-home</title>
+    <title>Qandil</title>
 </head>
 
 <body>
-    <section class="main">
+    <div class="qandil-socialbox">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-xing" aria-hidden="true"></i>
+        <i class="fa fa-git" aria-hidden="true"></i>
+    </div>
+    <div class="loader" id="loading">
+        <div class="loading">
+            loading...
+        </div>
+    </div>
+    <section class="main container-fluid">
+        <div class="modal container-fluid" id="modal1">
+            <div class="header">
+                <h4>Physics</h4>
+                <button class="btn modal-close" data-target="#modal1">&times;</button>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col">
+                        <div class="img-box">
+                            <img src="./img/learning/physics.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-box">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis perferendis
+                                voluptate explicabo rem corrupti aliquam aliquid similique consequatur unde commodi
+                                laudantium, nam doloribus nisi animi quidem minima eaque libero.</p>
+                            <a href="registeration.html" class="book-courses">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal container-fluid" id="modal2">
+            <div class="header">
+                <h4>Chemistry</h4>
+                <button class="btn modal-close" data-target="#modal2">&times;</button>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col">
+                        <div class="img-box">
+                            <img src="./img/learning/chemistry.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-box">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis perferendis
+                                voluptate explicabo rem corrupti aliquam aliquid similique consequatur unde commodi
+                                laudantium, nam doloribus nisi animi quidem minima eaque libero.</p>
+                            <a href="registeration.html" class="book-courses">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal container-fluid" id="modal3">
+            <div class="header">
+                <h4>counting</h4>
+                <button class="btn modal-close" data-target="#modal3">&times;</button>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col">
+                        <div class="img-box">
+                            <img src="./img/learning/counting.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-box">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis perferendis
+                                voluptate explicabo rem corrupti aliquam aliquid similique consequatur unde commodi
+                                laudantium, nam doloribus nisi animi quidem minima eaque libero.</p>
+                            <a href="registeration.html" class="book-courses">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal container-fluid" id="modal4">
+            <div class="header">
+                <h4>mathematics</h4>
+                <button class="btn modal-close" data-target="#modal4">&times;</button>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col">
+                        <div class="img-box">
+                            <img src="./img/learning/mathematics.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-box">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis perferendis
+                                voluptate explicabo rem corrupti aliquam aliquid similique consequatur unde commodi
+                                laudantium, nam doloribus nisi animi quidem minima eaque libero.</p>
+                            <a href="registeration.html" class="book-courses">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal container-fluid" id="modal5">
+            <div class="header">
+                <h4>AI</h4>
+                <button class="btn modal-close" data-target="#modal5">&times;</button>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col">
+                        <div class="img-box">
+                            <img src="./img/learning/Artificiall intelligence.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-box">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis perferendis
+                                voluptate explicabo rem corrupti aliquam aliquid similique consequatur unde commodi
+                                laudantium, nam doloribus nisi animi quidem minima eaque libero.</p>
+                            <a href="registeration.html" class="book-courses">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars menu" aria-hidden="true"></i>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars navbar-toggler-icon"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home icon"
-                                    aria-hidden="true"></i>Home</a>
+                            <a class="nav-link nav-link-personalize active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.vlab.physik.uni-kiel.de/wordpress/"><i
-                                    class="fa fa-cog icon" aria-hidden="true"></i>virtual
-                                sciense</a>
+                            <a class="nav-link nav-link-personalize" href="./solar.html" target="_blank">Solar
+                                System</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-labs/"><i
-                                    class="fa fa-flask icon" aria-hidden="true"></i>virtual lab</a>
+                            <a class="nav-link nav-link-personalize" href="./ai-chat.html" target="_blank">AI
+                                Chatbot</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-reality/"><i
-                                    class="fa fa-cube icon" aria-hidden="true"></i>virtual reality</a>
+                            <a class="nav-link nav-link-personalize" href="./blog.html" target="_blank">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-box/"><i
-                                    class="fa fa-rocket icon" aria-hidden="true"></i>virtual box</a>
+                            <a class="nav-link nav-link-personalize" href="youtube.html" target="_blank">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.vlab.physik.uni-kiel.de/wordpress/science-apps/"><i
-                                    class="fa fa-cogs icon" aria-hidden="true"></i>science apps</a>
+                            <a class="nav-link nav-link-personalize" href="./registeration.html" target="_blank">About
+                                Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.vlab.physik.uni-kiel.de/wordpress/mini-games/"><i
-                                    class="fa fa-gamepad icon" aria-hidden="true"></i>mini Games</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link-personalize" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Websites
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Awyar Platform</a></li>
+                                <li><a class="dropdown-item" href="#">Cooper Platform</a></li>
+                                <li><a class="dropdown-item" href="#">Learning Platform</a></li>
+                                <li><a class="dropdown-item" href="#">Artificial Intelligence</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="course.html"><i class="fa fa-book icon"
-                                    aria-hidden="true"></i>Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" onclick="about()"><i class="fa fa-map-marker icon"
-                                    aria-hidden="true"></i>About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <button onclick="openNav()" class="nav-link more-menu-btn">more</button>
-                        </li>
-                        <div class="menu-modal" id="myNav">
-                            <i class="fa fa-times close" onclick="closeNav()" aria-hidden="true"></i>
-                            <div class="nav-bar">
-                                <ul>
-                                    <li>
-                                        <h3 class="navbar-title">virtual-reality</h3>
-                                    </li>
-                                    <li class="nav-items"><a href="#" onclick="threed()">3D</a></li>
-                                    <li class="nav-items"><a href="#" onclick="threed()">2D</a></li>
-                                </ul>
-                            </div>
-                        </div>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="main-header-content">
-            <div class="direction-my-websites-buttons wow fadeInUp">
-                <a href="https://www.vlab.physik.uni-kiel.de/Mathemathics/" class="simple-dir-btn"><i class="fa fa-calculator direction-my-websites-buttons-icon"
-                        aria-hidden="true"></i>mathematic</a>
-                <a href="index.html" class="active"><i class="fa fa-grav direction-my-websites-buttons-icon"
-                        aria-hidden="true"></i>physics</a>
-            </div>
-            <h1 class="textAnim">Virtual Physics</h1>
+        <div class="title">
+            <h1 class="animate">
+                qandil academy
+            </h1>
         </div>
-    </section>
-    <section class="owlCarosel-part">
-        <div class="container">
-            <div class="title-section wow fadeInUp">
-                <h2>Atom simples</h2>
-            </div>
-            <div class="owl-carousel owl-theme wow fadeInDown">
-                <div class="item">
-                    <div class="item-body">
-                        <img src="./img/athom-owlcarsel/1.gif" alt="">
-                        <div class="item-details">
-                            <p>best Atomo</p>
-                            <a href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-labs/">More</a>
+        <div class="learning wow fadeInUp">
+            <div class="owl-division">
+                <div class="owl-carousel owl-theme owl">
+                    <div class="item">
+                        <div class="owl-item-body">
+                            <div class="owl-img-box">
+                                <img src="./img/learning/physics.png" alt="">
+                            </div>
+                            <div class="owl-describtion-box">
+                                <h3>Physics Projects</h3>
+                                <button class="btn-courses" data-target="#modal1">Learn More</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="item-body">
-                        <img src="./img/athom-owlcarsel/2.gif" alt="">
-                        <div class="item-details">
-                            <p>bchemistry atoms</p>
-                            <a href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-labs/">More</a>
+                    <div class="item">
+                        <div class="owl-item-body">
+                            <div class="owl-img-box">
+                                <img src="./img/learning/chemistry.png" alt="">
+                            </div>
+                            <div class="owl-describtion-box">
+                                <h3>Chemistry Projects</h3>
+                                <button class="btn-courses" data-target="#modal2">Learn More</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="item-body">
-                        <img src="./img/athom-owlcarsel/3.gif" alt="">
-                        <div class="item-details">
-                            <p>proton electron</p>
-                            <a href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-labs/">More</a>
+                    <div class="item">
+                        <div class="owl-item-body">
+                            <div class="owl-img-box">
+                                <img src="./img/learning/counting.png" alt="">
+                            </div>
+                            <div class="owl-describtion-box">
+                                <h3>Counting Projects</h3>
+                                <button class="btn-courses" data-target="#modal3">Learn More</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="item-body">
-                        <img src="./img/athom-owlcarsel/4.gif" alt="">
-                        <div class="item-details">
-                            <p>gyroscope</p>
-                            <a href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-labs/">More</a>
+                    <div class="item">
+                        <div class="owl-item-body">
+                            <div class="owl-img-box">
+                                <img src="./img/learning/mathematics.png" alt="">
+                            </div>
+                            <div class="owl-describtion-box">
+                                <h3>Mathematics Projects</h3>
+                                <button class="btn-courses" data-target="#modal4">Learn More</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="item-body">
-                        <img src="./img/athom-owlcarsel/5.gif" alt="">
-                        <div class="item-details">
-                            <p>gyroscope motion</p>
-                            <a href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-labs/">More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-body">
-                        <img src="./img/athom-owlcarsel/6.gif" alt="">
-                        <div class="item-details">
-                            <p>chemistry molecules</p>
-                            <a href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-labs/">More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-body">
-                        <img src="./img/athom-owlcarsel/7.gif" alt="">
-                        <div class="item-details">
-                            <p>Atom seperation</p>
-                            <a href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-labs/">More</a>
+                    <div class="item">
+                        <div class="owl-item-body">
+                            <div class="owl-img-box">
+                                <img src="./img/learning/Artificiall intelligence.png" alt="">
+                            </div>
+                            <div class="owl-describtion-box">
+                                <h3>AI Projects</h3>
+                                <button class="btn-courses" data-target="#modal5">Learn More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="main-header-content wow fadeInDown">
+            <h2 class="main-header-h2">
+                Qandil hub
+            </h2>
+            <div class="future-box">
+                <a href="#" class="futures">2D</a>
+                <a href="#" class="futures" onclick="commingSoon()">3D</a>
+            </div>
+        </div>
     </section>
-    <section class="quantom">
-        <div class="container">
-            <div class="title-section wow fadeInUp">
-                <h2>books</h2>
-                <div class="owl-carousel owl-theme wow fadeInDown">
-                    <div class="item item-intro">
-                        <div class="content-intro">
-                            <h4 class="dir-exp">swipe left</h4>
-                            <i class="fa fa-chevron-left dir" aria-hidden="true"></i>
-                        </div>
+    <section class="expriments">
+        <div class="interTitles">
+            <h5>Recommaded Courses</h5>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="expriments-left-box">
+                    <div class="expriments-img-box">
+                        <img class="expriments-img" src="./img/experiments of physics/img-box.png" alt="">
                     </div>
-                    <div class="item">
-                        <img src="./img/quantom/b1.jpg" alt="">
-                        <div class="quantum-item-overlay">
-                            <i class="fa fa-book overlay-icon" aria-hidden="true"></i>
-                            <p class="overlay-p">quantom physics</p>
-                        </div>
+                    <div class="expriments-explonation-box">
+                        <p>Python has been becoming to a popular programming language between programmers and developers
+                        </p>
+                        <p>In this course we have tried to bring some practical information in free version as where as
+                            possible</p>
+                        <a href="youtube.html" class="youtube-dir">Watch more tutorials</a>
                     </div>
-                    <div class="item">
-                        <img src="./img/quantom/b2.jpg" alt="">
-                        <div class="quantum-item-overlay">
-                            <i class="fa fa-book overlay-icon" aria-hidden="true"></i>
-                            <p class="overlay-p">quantom informaion</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/quantom/b3.jpg" alt="">
-                        <div class="quantum-item-overlay">
-                            <i class="fa fa-book overlay-icon" aria-hidden="true"></i>
-                            <p class="overlay-p">quantom mechanics</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/quantom/b4.jpg" alt="">
-                        <div class="quantum-item-overlay">
-                            <i class="fa fa-book overlay-icon" aria-hidden="true"></i>
-                            <p class="overlay-p">quantom computing</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/quantom/b5.jpg" alt="">
-                        <div class="quantum-item-overlay">
-                            <i class="fa fa-book overlay-icon" aria-hidden="true"></i>
-                            <p class="overlay-p">classical quantom</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/quantom/b6.jpg" alt="">
-                        <div class="quantum-item-overlay">
-                            <i class="fa fa-book overlay-icon" aria-hidden="true"></i>
-                            <p class="overlay-p">fundamental</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/quantom/b7.jpg" alt="">
-                        <div class="quantum-item-overlay">
-                            <i class="fa fa-book overlay-icon" aria-hidden="true"></i>
-                            <p class="overlay-p">quantom organization</p>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="experiments-right-box">
+                    <div class="experiment-video-box">
+                        <video id="main-video" class="video" poster="./img/experiments of physics/video-cover.jpg"
+                            controls>
+                            <source src="./img/experiments of physics/video-box.mp4" type="video/mp4">
+                        </video>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="pendulum">
-        <div class="container">
-            <div class="title-section wow fadeInUp">
-                <h2>pendulum rolls</h2>
+    <section class="youtube" id="assignment">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="logo-box wow fadeInLeft">
+                    <img class="youtube-main-img" src="./img/youtube/logo.png" alt="">
+                </div>
             </div>
+            <div class="col-lg-6">
+                <div class="youtube-explonation wow fadeInRight">
+                    <div class="logo-box-explonation">
+                        <img src="./img/youtube/title.png" alt="">
+                    </div>
+                    <div class="youtube-explonation-content">
+                        <span>Follow Our Courses In Social Media</span>
+                        <div class="youtube-dirbox">
+                            <a href="https://www.youtube.com/@scienceforeveryone7508/videos" class="youtube-dir">You
+                                Tube</a>
+                            <a href="youtube.html" class="youtube-dir">Courses Introduction</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="ai-chat-academy">
+        <div class="ai-chat-academy-content">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="pendulum-img-box wow fadeInLeft" data-wow-delay=".8s">
-                        <img src="./img/pundolm/main.gif" alt="">
+                <div class="col">
+                    <div class="ai-chat-academy-img">
+                        <img src="./img/ai-chat-academy/img.gif" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="pendulum-explain wow fadeInRight" data-wow-delay=".8s">
-                        <h6>
-                            pengdulum Explaining
-                        </h6>
-                        <p>Pendulum Theory
-                            The Pendulum Theory is based on Newton's First Law of Motion, which states that a body at
-                            rest tends to stay at rest, and a body in motion tends to stay in motion with the same
-                            speed, and in the same direction, unless acted upon by an unbalanced force.</p>
-                        <a href="course.html">more</a>
+                <div class="col">
+                    <div class="ai-chat-academy-explonation">
+                        <h3>Do You Want To Experience AI Abilities</h3>
+                        <p>We already prepare for Answering all of your questions </p>
+                        <p class="further">touch the link bellow and experience something beyond your expectations</p>
+                        <a href="./ai-chat.html" class="ai-chat-academy-link">Go To AI Chat-Bot</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="members">
+        <div class="interTitles">
+            <h5>Official Memmbers</h5>
+        </div>
+        <div class="owl-carousel owl-theme owl">
+            <div class="item">
+                <div class="members-items">
+                    <div class="members-img">
+                        <img src="./img/members/Amir.jpg" alt="img">
+                    </div>
+                    <div class="members-explonation">
+                        <h4>Karim Salehi</h4>
+                        <span>scienctist</span>
+                        <div class="members-social">
+                            <i class="fa fa-instagram social-fa" aria-hidden="true"></i>
+                            <i class="fa fa-github social-fa" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="members-items">
+                    <div class="members-img">
+                        <img src="./img/members/pouya.jpg" alt="img">
+                    </div>
+                    <div class="members-explonation">
+                        <h4>Pouya Salehi</h4>
+                        <span>Programmer</span>
+                        <div class="members-social">
+                            <i class="fa fa-instagram social-fa" aria-hidden="true"></i>
+                            <i class="fa fa-github social-fa" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="members-items">
+                    <div class="members-img">
+                        <img src="./img/members/vector.jpg" alt="img">
+                    </div>
+                    <div class="members-explonation">
+                        <h4>#3</h4>
+                        <span>##########</span>
+                        <div class="members-social">
+                            <i class="fa fa-instagram social-fa" aria-hidden="true"></i>
+                            <i class="fa fa-github social-fa" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="members-items">
+                    <div class="members-img">
+                        <img src="./img/members/vector.jpg" alt="img">
+                    </div>
+                    <div class="members-explonation">
+                        <h4>#4</h4>
+                        <span>##########</span>
+                        <div class="members-social">
+                            <i class="fa fa-instagram social-fa" aria-hidden="true"></i>
+                            <i class="fa fa-github social-fa" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="members-items">
+                    <div class="members-img">
+                        <img src="./img/members/vector.jpg" alt="img">
+                    </div>
+                    <div class="members-explonation">
+                        <h4>#5</h4>
+                        <span>##########</span>
+                        <div class="members-social">
+                            <i class="fa fa-instagram social-fa" aria-hidden="true"></i>
+                            <i class="fa fa-github social-fa" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="navbar-footer wow fadeInDown" data-wow-delay=".7s">
-                        <ul>
-                            <li class="nav-item-h6">
-                                <h6>navigation</h6>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link-footer" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link-footer" href="https://www.vlab.physik.uni-kiel.de/wordpress/">virtual
-                                    Science</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link-footer"
-                                    href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-labs/">virtual lab</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link-footer"
-                                    href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-reality/">virtual
-                                    reality</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link-footer"
-                                    href="https://www.vlab.physik.uni-kiel.de/wordpress/virtual-box/">virtual box</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link-footer"
-                                    href="https://www.vlab.physik.uni-kiel.de/wordpress/mini-games/">science apps</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link-footer"
-                                    href="https://www.vlab.physik.uni-kiel.de/wordpress/mini-games/">mini games</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link-footer" href="course.html">courses</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link-footer" href="#" onclick="about()">About</a>
-                            </li>
-                        </ul>
+        <!-- <hr> -->
+        <div class="row">
+            <div class="col">
+                <div class="footer-items">
+                    <span class="footer-title">
+                        Site Navigation
+                    </span>
+                    <div class="footer-sperator"></div>
+                    <div class="footer-directions">
+                        <a href="index.html">Home</a>
+                        <a href="solar.html">Solar System</a>
+                        <a href="ai-chat.html">AI Chatbot</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="youtube.html">Courses</a>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="footer-services wow fadeInDown" data-wow-delay=".9s">
-                        <ul>
-                            <li class="nav-item-h6">
-                                <h6>our services</h6>
-                            </li>
-                            <li>A.I(coming soon)</li>
-                        </ul>
+            </div>
+            <div class="col">
+                <div class="footer-items">
+                    <span class="footer-title">
+                        Our websites
+                    </span>
+                    <div class="footer-sperator"></div>
+                    <div class="footer-directions">
+                        <a href="#">Awyar Platform</a>
+                        <a href="#">Cooper Platform</a>
+                        <a href="#">Learning Platform</a>
+                        <a href="#">Artificial Intelligence</a>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="footer-map wow fadeInDown" data-wow-delay="1.1s">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148854.49932033892!2d9.985593565392438!3d54.341931889107165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560d8fee97ad%3A0x4248963c6580320!2sKiel%2C%20Germany!5e0!3m2!1sen!2s!4v1658949694191!5m2!1sen!2s"
-                            width="320" height="280" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col">
+                <div class="footer-items">
+                    <span class="footer-title">
+                        Our Assignments
+                    </span>
+                    <div class="footer-sperator"></div>
+                    <div class="footer-directions">
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Perform university projects</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Perform Your Thesis from scratch</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Generating ebooks according to your interests</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Genenrating Learning courses for teachers</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- script -->
     <script src="./js/script.js"></script>
     <!-- script Plugs -->
-    <script src="./plugs/fontawesome-free-6.1.1-web/js/all.js"></script>
     <script src="./plugs/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
     <script src="./plugs/owl carosel/owl.carousel.min.js"></script>
     <script src="./plugs/WOW-master/dist/wow.min.js"></script>
     <script src="./plugs/alerts/sweetalert2.min.js"></script>
+    <script src="./plugs/alerts/sweetalert2.min.js"></script>
+    <!-- ----- -->
     <script>
         new WOW().init();
     </script>
     <script>
+        var wow = new WOW(
+            {
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true,
+                callback: function (box) {
+
+                },
+                scrollContainer: null,
+                resetAnimation: true,
+            }
+        );
+        wow.init();
+    </script>
+    <script>
         $('.owl-carousel').owlCarousel({
-            loop: false,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
             nav: false,
-            margin: 10,
-            dots: false,
+            loop: true,
             responsive: {
                 0: {
                     items: 1
                 },
                 600: {
-                    items: 3
+                    items: 2
                 },
                 1000: {
-                    items: 5
+                    items: 4
                 }
             }
         })
